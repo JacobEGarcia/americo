@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMERICO - Build It Here</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#12294a;--red:#c2362e;--cream:#f4f0e6;--ink:#161a20;--line:#cfc8b8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,sans-serif}
+h1,h2{font-family:Fraunces,serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{background:var(--navy);color:var(--cream);padding:0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:17px;letter-spacing:.14em}
+.logo b{color:var(--red);background:var(--cream);padding:1px 6px;border-radius:2px;margin-left:4px}
+nav a{color:#c8d2e2;font-family:'IBM Plex Mono',monospace;font-size:11px;text-decoration:none;margin-left:20px}
+nav a:hover{color:#fff}
+.hero{background:var(--navy);color:var(--cream);padding:90px 0 80px;position:relative;overflow:hidden}
+.hero .stripe{position:absolute;right:-60px;top:0;bottom:0;width:340px;background:repeating-linear-gradient(135deg,var(--red) 0 22px,transparent 22px 44px);opacity:.28;transform:skewX(-8deg)}
+.hero .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.3em;color:#e8b0a8;margin-bottom:20px}
+.hero h1{font-size:64px;font-weight:900;line-height:1.02;margin:0 0 22px;max-width:700px}
+.hero h1 em{font-style:normal;color:var(--red);text-shadow:0 0 0 var(--red)}
+.hero p{max-width:520px;color:#c8d2e2;font-size:16px;line-height:1.7}
+.stats{display:flex;gap:0;margin-top:48px;border:1px solid #2e4a6e;border-radius:6px;overflow:hidden;max-width:700px}
+.stat{flex:1;padding:18px 20px;border-right:1px solid #2e4a6e}
+.stat:last-child{border-right:none}
+.stat .n{font-family:Fraunces,serif;font-size:30px;font-weight:600;color:#fff}
+.stat .l{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.18em;color:#8ea2bc;margin-top:4px}
+section{padding:64px 0}
+.shead{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;color:var(--red);margin-bottom:10px}
+h2.st{font-size:38px;font-weight:600;margin:0 0 10px;color:var(--navy)}
+.snote{color:#5a6152;max-width:560px;font-size:14.5px;line-height:1.7;margin-bottom:36px}
+.divgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.div{border:1px solid var(--line);border-top:4px solid var(--red);border-radius:6px;padding:26px;background:#faf7ee;transition:transform .15s}
+.div:hover{transform:translateY(-3px)}
+.div .num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red)}
+.div h3{font-family:Fraunces,serif;font-size:23px;margin:6px 0 8px;color:var(--navy)}
+.div p{margin:0;font-size:13.5px;color:#5a6152;line-height:1.65}
+.div ul{margin:12px 0 0;padding:0;list-style:none}
+.div li{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#4a5568;padding:5px 0;border-top:1px dashed var(--line)}
+.div li::before{content:'▸ ';color:var(--red)}
+.prin{background:var(--navy);color:var(--cream)}
+.prin h2.st{color:var(--cream)}
+.prin .snote{color:#c8d2e2}
+.plist{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid #2e4a6e;border-radius:6px;overflow:hidden}
+.p{padding:26px;border-right:1px solid #2e4a6e}
+.p:last-child{border-right:none}
+.p .n{font-family:Fraunces,serif;font-size:15px;color:var(--red);font-weight:600}
+.p h4{font-family:Fraunces,serif;font-size:19px;margin:8px 0;color:#fff}
+.p p{margin:0;font-size:12.5px;color:#c8d2e2;line-height:1.65}
+.cta{text-align:center;padding:80px 0}
+.cta h2{font-size:44px;font-weight:900;color:var(--navy);margin:0 0 14px}
+.cta p{color:#5a6152;margin-bottom:26px}
+.cta a{background:var(--red);color:#fff;padding:14px 34px;border-radius:4px;text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em}
+footer{background:var(--ink);color:#8a919c;padding:34px 0;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-align:center}
+@media(max-width:820px){.divgrid,.plist{grid-template-columns:1fr}.hero h1{font-size:40px}.stats{flex-direction:column}.stat{border-right:none;border-top:1px solid #2e4a6e}.p{border-right:none;border-top:1px solid #2e4a6e}}
+</style></head><body>
+<header><div class="wrap"><div class="logo">AMERICO<b>US</b></div>
+<nav><a href="#divisions">divisions</a><a href="#principles">doctrine</a><a href="#join">join</a></nav></div></header>
+<div class="hero"><div class="stripe"></div><div class="wrap">
+<div class="k">REINDUSTRIALIZATION · EST. ON PRINCIPLE</div>
+<h1>The things a nation <em>makes</em> are the things it is.</h1>
+<p>AMERICO builds hardware, software, intelligence, and the security to defend all three - on home soil, with home hands, at full throttle.</p>
+<div class="stats">
+<div class="stat"><div class="n">4</div><div class="l">DIVISIONS</div></div>
+<div class="stat"><div class="n">1</div><div class="l">SUPPLY CHAIN</div></div>
+<div class="stat"><div class="n">0</div><div class="l">EXCUSES</div></div>
+</div></div></div>
+<section id="divisions"><div class="wrap">
+<div class="shead">WHAT WE BUILD</div><h2 class="st">Four Divisions, One Bench</h2>
+<p class="snote">Every division shares one factory floor of ideas. Hardware informs software informs intelligence informs security - and back around again.</p>
+<div class="divgrid">
+<div class="div"><div class="num">DIV. 01</div><h3>Hardware</h3>
+<p>Machines you can hold. Tooling, robotics, and the unglamorous metal that everything else stands on.</p>
+<ul><li>CNC &amp; additive lines</li><li>Industrial robotics</li><li>Field-hardened devices</li></ul></div>
+<div class="div"><div class="num">DIV. 02</div><h3>Software</h3>
+<p>Code that ships and keeps shipping. Operational systems for people who make physical things.</p>
+<ul><li>Factory operating systems</li><li>Logistics &amp; planning</li><li>Design-to-floor tooling</li></ul></div>
+<div class="div"><div class="num">DIV. 03</div><h3>Intelligence</h3>
+<p>Applied AI with a job description. Models tuned for machines, materials, and the people running both.</p>
+<ul><li>Process optimization</li><li>Machine vision QC</li><li>Predictive maintenance</li></ul></div>
+<div class="div"><div class="num">DIV. 04</div><h3>Security</h3>
+<p>If it is worth building, it is worth defending. Cybersecurity for industrial systems that cannot afford a bad day.</p>
+<ul><li>OT/ICS hardening</li><li>Supply-chain audit</li><li>Red team operations</li></ul></div>
+</div></div></section>
+<section class="prin" id="principles"><div class="wrap">
+<div class="shead">DOCTRINE</div><h2 class="st">Three Rules on the Wall</h2>
+<p class="snote">Every shop has rules. Ours fit on one wall, in paint, in every building we run.</p>
+<div class="plist">
+<div class="p"><div class="n">RULE I</div><h4>Make it here</h4><p>Distance is a bug. The designer, the machinist, and the customer should be able to shake hands.</p></div>
+<div class="p"><div class="n">RULE II</div><h4>Own the stack</h4><p>From ore to interface. What you do not control, you do not have.</p></div>
+<div class="p"><div class="n">RULE III</div><h4>Ship or hush</h4><p>Announcements are not products. The loading dock is the only press release that counts.</p></div>
+</div></div></section>
+<section class="cta" id="join"><div class="wrap">
+<h2>Bring a lunch pail.</h2>
+<p>Machinists, engineers, operators, and the stubbornly curious. The line starts Monday.</p>
+<a href="#divisions">SEE THE DIVISIONS</a>
+</div></section>
+<footer>AMERICO · HARDWARE / SOFTWARE / INTELLIGENCE / SECURITY · BUILT AT HOME, BUILT TO LAST</footer>
+</body></html>
